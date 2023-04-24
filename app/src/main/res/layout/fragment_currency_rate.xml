@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".currency_name">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/jod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JOD"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/eur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EUR"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/aed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AED"
+            tools:ignore="HardcodedText" />
+        <RadioButton
+            android:id="@+id/jpy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JPY"
+            tools:ignore="HardcodedText" />
+
+
+    </RadioGroup>
+    <Space
+        android:id="@+id/sps"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_below="@+id/group"
+        />
+
+    <EditText
+        android:inputType="number"
+        android:text="Put The Amount Here"
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sps"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        tools:ignore="SpUsage" />
+    <Button
+        android:text="Make Exchange"
+        android:id="@+id/but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate"
+        tools:ignore="HardcodedText,VisualLintButtonSize">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        tools:ignore="SpUsage" />
+
+</RelativeLayout>
+
